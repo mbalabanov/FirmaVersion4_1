@@ -39,7 +39,7 @@ public class Verwaltung implements Utility {
 		mitarbeiter_Liste[11] = new Angestellter(12, "Wilmar", 1703.67, 1496.21, 23.3);
 
 		// Abteilungen und Abteilungsliste werden erstellt
-		abteilungs_Liste = new Abteilung[4];
+		abteilungs_Liste = new Abteilung[SIZE_ABTEILUNG];
 		abteilungs_Liste[0] = new Abteilung(1, ABTEILUNG_PR, new Mitarbeiter[] { mitarbeiter_Liste[0],
 				mitarbeiter_Liste[5], mitarbeiter_Liste[6], mitarbeiter_Liste[7] });
 		abteilungs_Liste[1] = new Abteilung(2, ABTEILUNG_SALES, new Mitarbeiter[] { mitarbeiter_Liste[1],
