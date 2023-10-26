@@ -1,9 +1,7 @@
 # Firma Version 4.1
 Dieses Repo enthält die Java-Lösung zum ersten Teil von Version 4 des Projekts "Firma".
 
-Zum Starten, bitte `Verwaltung.java` ausführen und auf die Console achten.
-
-Die Datei `VerwaltungTest.java` enthält insgesamt elf JUnit-Tests.
+Die Main-Datei ist `Verwaltung.java` allerdings befinden sich alle Tests in der Datei `VerwaltungTest.java` (insgesamt elf JUnit-Tests).
 
 ## Klassendiagramm
 
