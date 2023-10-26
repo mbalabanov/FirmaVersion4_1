@@ -1,0 +1,34 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-18b3882e15d-3645eecf615104f3": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "jdb07",
+			"save-password": true,
+			"configuration": {
+				"host": "train01.bfi.wien",
+				"port": "3306",
+				"database": "jdb07",
+				"url": "jdbc:mysql://train01.bfi.wien:3306/jdb07",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
