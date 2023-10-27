@@ -155,13 +155,12 @@ public class Verwaltung implements Utility {
 	}
 
 	/**
-	 * @param mitarbeiterListe
 	 * @return
 	 */
-	public int getAnzAngestellterGesamt(Mitarbeiter[] mitarbeiterListe) {
+	public int getAnzAngestellterGesamt() {
 		int anzahlAngestellte = 0;
 
-		for (Mitarbeiter dieserMitarbeiter : mitarbeiterListe) {
+		for (Mitarbeiter dieserMitarbeiter : mitarbeiter_Liste) {
 			if (dieserMitarbeiter instanceof Angestellter) {
 				anzahlAngestellte++;
 			}
@@ -171,13 +170,12 @@ public class Verwaltung implements Utility {
 	};
 
 	/**
-	 * @param mitarbeiterListe
 	 * @return
 	 */
-	public int getAnzArbeiterGesamt(Mitarbeiter[] mitarbeiterListe) {
+	public int getAnzArbeiterGesamt() {
 		int anzahlArbeiter = 0;
 
-		for (Mitarbeiter dieserMitarbeiter : mitarbeiterListe) {
+		for (Mitarbeiter dieserMitarbeiter : mitarbeiter_Liste) {
 			if (dieserMitarbeiter instanceof Arbeiter) {
 				anzahlArbeiter++;
 			}
@@ -186,20 +184,20 @@ public class Verwaltung implements Utility {
 		return anzahlArbeiter;
 	}
 
-	public static Abteilung[] getAbteilungs_Liste() {
+	public Abteilung[] getAbteilungs_Liste() {
 		return abteilungs_Liste;
 	}
 
-	public static void setAbteilungs_Liste(Abteilung[] abteilungs_Liste) {
-		Verwaltung.abteilungs_Liste = abteilungs_Liste;
+	public void setAbteilungs_Liste(Abteilung[] abteilungs_Liste) {
+		this.abteilungs_Liste = abteilungs_Liste;
 	}
 
-	public static Mitarbeiter[] getMitarbeiter_Liste() {
+	public Mitarbeiter[] getMitarbeiter_Liste() {
 		return mitarbeiter_Liste;
 	}
 
-	public static void setMitarbeiter_Liste(Mitarbeiter[] mitarbeiter_Liste) {
-		Verwaltung.mitarbeiter_Liste = mitarbeiter_Liste;
+	public void setMitarbeiter_Liste(Mitarbeiter[] mitarbeiter_Liste) {
+		this.mitarbeiter_Liste = mitarbeiter_Liste;
 	};
 
 	public Firma getFirma() {
