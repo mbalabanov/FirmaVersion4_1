@@ -1,3 +1,10 @@
+/*
+ * 
+ * Firma V4.1 - Firma
+ * Marin Balabanov
+ * 
+ */
+
 package at.bfi.projekt.firma_v4_1.complete;
 
 import java.util.Arrays;

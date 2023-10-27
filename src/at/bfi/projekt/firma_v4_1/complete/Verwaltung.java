@@ -1,6 +1,7 @@
 /*
  * 
  * Firma V4.1 - Verwaltung
+ * Marin Balabanov
  * 
  */
 
@@ -54,6 +55,9 @@ public class Verwaltung implements Utility {
 	}
 
 	/**
+	 * Wurde vom Trainer nachträglich mündlich von void auf double geändert. (Ist
+	 * mit Stand 26.Oktober noch nicht in der schriftlichen Angabe berücksichtigt.)
+	 * 
 	 * @return
 	 */
 	public double berechneSummeAlleGehaelter() {
@@ -82,6 +86,9 @@ public class Verwaltung implements Utility {
 		return bruttoBetrag - steuerBetrag;
 	};
 
+	/**
+	 * @return
+	 */
 	public String ausgabe_AlleAbteilungen() {
 		String tempAusgabe = "";
 		for (Abteilung dieseAbteilung : this.firma.getAbteilungs_Liste()) {
@@ -119,6 +126,10 @@ public class Verwaltung implements Utility {
 		return null;
 	}
 
+	/**
+	 * @param id
+	 * @return
+	 */
 	public boolean searchAbteilung(int id) {
 		for (Abteilung abteilung : firma.getAbteilungs_Liste()) {
 			if (abteilung.getId() == id) {
