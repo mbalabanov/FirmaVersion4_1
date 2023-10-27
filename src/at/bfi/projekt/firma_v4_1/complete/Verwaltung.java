@@ -139,8 +139,6 @@ public class Verwaltung implements Utility {
 	}
 
 	/**
-	 * Diese
-	 * 
 	 * @param mitarbeiterListe
 	 */
 	public String ausgabeMitarbeiterListe(Mitarbeiter[] dieseMitarbeiterListe) {
